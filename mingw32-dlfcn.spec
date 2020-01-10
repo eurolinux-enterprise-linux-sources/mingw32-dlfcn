@@ -11,7 +11,7 @@
 
 Name:          mingw32-dlfcn
 Version:       0
-Release:       0.7.%{alphatag}%{?dist}.3
+Release:       0.7.%{alphatag}%{?dist}.4
 Summary:       Implements a wrapper for dlfcn (dlopen dlclose dlsym dlerror)
 
 
@@ -92,6 +92,10 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 0-0.7.r11.3
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
